@@ -1,1 +1,43 @@
+{
+  "name":"Bottom Sheet EditText",
+  "code":"{
+  "name":"Bottom Sheet EditText",
+  "code":"final com.google.android.material.bottomsheet.BottomSheetDialog bs_base = new com.google.android.material.bottomsheet.BottomSheetDialog(MainActivity.this);
 
+View layBase = getLayoutInflater().inflate(R.layout.bottom_sheet, null);
+
+bs_base.setContentView(layBase);
+
+bs_base.show();
+
+Button but1 = (Button)layBase.findViewById(R.id.button1);
+EditText entertext = (EditText) layBase.findViewById(R.id.edittext1);
+entertext.setFocusableInTouchMode(true);
+
+
+entertext.addTextChangedListener(new TextWatcher() {
+   @Override
+   public void onTextChanged(CharSequence _param1, int _param2, int _param3, int _param4) {
+    final String _charSeq = _param1.toString();
+    ///code
+
+   }
+   
+   @Override
+   public void beforeTextChanged(CharSequence _param1, int _param2, int _param3, int _param4) {
+    
+   }
+   
+   @Override
+   public void afterTextChanged(Editable _param1) {
+    
+   }
+  });
+
+but1.setOnClickListener(new View.OnClickListener() {
+public void onClick(View v) {
+bs_base.dismiss();
+}
+});",
+"link":"https://www.sharelink.id=adhdkeiwlshfgwue"
+}
