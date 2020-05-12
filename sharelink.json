@@ -1,6 +1,4 @@
 {
-  "title":"Bottom Sheet EditText",
-  "code":"{
   "name":"Bottom Sheet EditText",
   "code":"final com.google.android.material.bottomsheet.BottomSheetDialog bs_base = new com.google.android.material.bottomsheet.BottomSheetDialog(MainActivity.this);
 
